@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/pendaftaran"
+            android:gravity="center"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/NamaError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/idNama"
+                android:hint="@string/nama2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AlamatError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/idalamat"
+                android:hint="@string/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textImeMultiLine"
+                android:maxLines="3"
+                android:singleLine="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/jekel"
+                android:text="@string/jkel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed-light" />
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/rgJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/lk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/lk"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+                <RadioButton
+                    android:id="@+id/pr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/pr"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/idforAgama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="@string/agama"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:id="@+id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/idAgamaI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/AgamaI"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+
+                <RadioButton
+                    android:id="@+id/idAgamaKa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/AgamaKa"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+
+                <RadioButton
+                    android:id="@+id/idAgamaK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/AgamaK"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:id="@+id/rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/idAgamaH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/AgamaH"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+
+                <RadioButton
+                    android:id="@+id/idAgamaB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/AgamaB"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+                <RadioButton
+                    android:id="@+id/idAgamaKH"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/AgamaKH"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+            </RadioGroup>
+
+            <RadioGroup
+                android:orientation="vertical"
+                android:id="@+id/rg3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <RadioButton
+                    android:id="@+id/idKepercayaan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/penganut"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/salem"/>
+            </RadioGroup>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EmailError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/idEmail"
+                android:hint="@string/msemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PwError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/idPw"
+                android:hint="@string/mspwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idRepwError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/idfRepw"
+                android:hint="@string/repwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttnBatal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btnbatal"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.4"
+                android:fontFamily="sans-serif-condensed-light"
+                app:backgroundTint="@color/pink"
+                app:cornerRadius="30dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttnDaftar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btndaftar"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.4"
+                android:fontFamily="sans-serif-condensed-light"
+                app:backgroundTint="@color/pink"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
